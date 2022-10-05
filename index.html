@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
-    <title>Hello world!</title>
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="navabr.css" />
+    <script src="comeback.js"></script>
+    <script src="navbar.js"></script>
+    <script src="js/cursor.js"></script>
+    <link rel="stylesheet" href="cursor.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/2b0b08f3-376d-41fb-a5cb-a88cb00396bc/image-removebg-preview%20(30).png?v=1661931649217"
+    />
   </head>
+  <title>Fluids🎉</title>
   <body>
-    <!-- this is the start of content -->
-    <h1>
-      Hello World!
-    </h1>
-    <p>
-      This starter gives you everything you need to start working on a new
-      website, and nothing more. If you're looking for something a little more
-      opinionated, try remixing
-      <a href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-        >~glitch-hello-website</a
-      >.
-    </p>
+    <embed src="https://cdn.glitch.global/2b0b08f3-376d-41fb-a5cb-a88cb00396bc/Youareanidiot.mp3?v=1662937292366" loop="true" autostart="true" width="2"
+         height="0">
+    <!--Navbar-->
+    <link rel="stylesheet" href="epok/pages/css/navbar.css" />
+    <header class="l-header">
+      <nav class="nav bd-grid">
+          <div>
+              <a href="#" class="nav__logo">Epok</a>
+          </div>
+
+          <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="https://epok.glitch.me" class="nav__link active">Fluids</a></li>
+                  <li class="nav__item"><a href="epok/pages/dino.html" class="nav__link">Dino</a></li>
+                  <li class="nav__item"><a href="epok/pages/ping.html" class="nav__link">Ping Pong</a></li>
+                  <li class="nav__item"><a href="epok/pages/music.html" class="nav__link">Epokify</a></li>
+              </ul>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+              <i class='bx bx-menu'></i>
+          </div>
+      </nav>
+  </header>
+    <!--Navend-->
+
+    <canvas style="width: 99vw; height: 96vh" />
+    <script type="module">
+      import WebglFluid from "https://unpkg.com/webgl-fluid@0.1.0/dist/webgl-fluid.es.js";
+
+      WebglFluid(document.querySelector("canvas"), {
+        // options
+      });
+    </script>
   </body>
 </html>
