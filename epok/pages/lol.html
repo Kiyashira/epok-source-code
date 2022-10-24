@@ -6,9 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Click Me</title>
     <meta name="description" content="I dare you to click me. No really, try and click me. Try your best. I bet you won't be able to. Actually, try it. Try to click me.">
-    <style>
+    <!--Navbar-->
+   <link rel="stylesheet" href="css/navbar.css" />
+   <header class="l-header">
+     <nav class="nav bd-grid">
+         <div>
+             <a href="#" class="nav__logo">Epok</a>
+         </div>
+
+         <div class="nav__menu" id="nav-menu">
+             <ul class="nav__list">
+                 <li class="nav__item"><a href="https://epok.glitch.me" class="nav__link active">Fluids</a></li>
+                 <li class="nav__item"><a href="https://epok.glitch.epok/pages/dino.html" class="nav__link">Dino</a></li>
+                 <li class="nav__item"><a href="https://epok.glitch.me/epok/pages/ping.html" class="nav__link">Ping Pong</a></li>
+                 <li class="nav__item"><a href="https://epok.glitch.me/epok/pages/music.html" class="nav__link">Epokify</a></li>
+                <li class="nav__item"><a href="https://epokcoin.glitch.me" class="nav__link">Crypto</a></li>
+               <li class="nav__item"><a href="https://epok.glitch.me/epok/pages/lol.html" class="nav__link">🤨</a></li>
+               <li class="nav__item"><a href="https://discord.gg/VrhKmaCAra" class="nav__link">Discord</a></li>
+             </ul>
+         </div>
+
+         <div class="nav__toggle" id="nav-toggle">
+             <i class='bx bx-menu'></i>
+         </div>
+     </nav>
+ </header>
+  <audio autoplay loop src="https://ik.imagekit.io/epok/THE_LOUNGE___Chill_out___Lounge_music__Benjamin_Tissot__also_known_as_Bensound__-240p_bLn0dxSJk.mp4?ik-sdk-version=javascript-1.4.3&updatedAt=1666473765113"></audio>
+
+   <!--Navend-->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
         html {
-            background-image: linear-gradient(rgb(71, 233, 21), rgb(19, 233, 162));
+            background-color: #0E2431;
             background-size: 100%;
             background-repeat: no-repeat;
             padding-bottom: 1000px;
@@ -22,8 +52,8 @@
         }
         .mybutton {
             background-color: white;
-            color:#00b1b1;
-            font-family: 'PT Sans', sans-serif;
+            color:#0E2431;
+            font-family: 'Titan One', cursive;
             padding: 22px 50px;
             display: inline-block;
             margin-top: 10px;
@@ -46,11 +76,11 @@
         if (Math.random() * 20 > 1) {
             alert(response[Math.floor(Math.random() * response.length)])
         } else {
-            location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            location.href = "https://www.youtube.com/watch?v=WXHjPT0wdAs"
         }
     }
     document.getElementById("annoyingButton").onclick = function() {
-        alert("Yay, you clicked the button! Click on OK to get your reward!");
+        alert("Ok heres ur reward!!!");
         location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     }
 </script>
