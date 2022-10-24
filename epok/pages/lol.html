@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me</title>
+    <meta name="description" content="I dare you to click me. No really, try and click me. Try your best. I bet you won't be able to. Actually, try it. Try to click me.">
+    <style>
+        html {
+            background-image: linear-gradient(rgb(71, 233, 21), rgb(19, 233, 162));
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding-bottom: 1000px;
+        }
+        input {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+        }
+        .mybutton {
+            background-color: white;
+            color:#00b1b1;
+            font-family: 'PT Sans', sans-serif;
+            padding: 22px 50px;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 6px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.233);
+            border: none;
+            font-size: 25px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="submit" value="I dare you to click me" id="annoyingButton" class="mybutton">
+</body>
+<script>
+        let response = ['Nice try', 'Try again', 'Give it another shot', 'smh. Try harder!', 'Are you even trying?', 'Try, try, try again', 'You can do it!', 'I believe in you', 'Just try it once more... maybe this time?', 'Try harder!', 'Come on,', 'Come on...'];
+    document.getElementById("annoyingButton").onmouseover = function() {
+        if (Math.random() * 20 > 1) {
+            alert(response[Math.floor(Math.random() * response.length)])
+        } else {
+            location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        }
+    }
+    document.getElementById("annoyingButton").onclick = function() {
+        alert("Yay, you clicked the button! Click on OK to get your reward!");
+        location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+</script>
+</html>
