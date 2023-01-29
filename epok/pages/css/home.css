@@ -15,6 +15,12 @@ h3{
  
   color:white;
 }
+h2{
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+ 
+  color:white;
+}
 hr {
     clear: both;
     visibility: hidden;
